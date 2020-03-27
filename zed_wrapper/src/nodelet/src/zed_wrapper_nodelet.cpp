@@ -323,35 +323,35 @@ namespace zed_wrapper {
         //        image_transport::ImageTransport it_zed(mNhNs);
         image_transport::ImageTransport it_zed(mNhNs);
 
-        mPubRgb = it_zed.advertiseCamera(rgb_topic, 1); // rgb
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRgb.getTopic());
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRgb.getInfoTopic());
-        mPubRawRgb = it_zed.advertiseCamera(rgb_raw_topic, 1); // rgb raw
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawRgb.getTopic());
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawRgb.getInfoTopic());
-        mPubLeft = it_zed.advertiseCamera(left_topic, 1); // left
-        NODELET_INFO_STREAM("Advertised on topic " << mPubLeft.getTopic());
-        NODELET_INFO_STREAM("Advertised on topic " << mPubLeft.getInfoTopic());
-        mPubRawLeft = it_zed.advertiseCamera(left_raw_topic, 1); // left raw
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawLeft.getTopic());
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawLeft.getInfoTopic());
+        //mPubRgb = it_zed.advertiseCamera(rgb_topic, 1); // rgb
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRgb.getTopic());
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRgb.getInfoTopic());
+        //mPubRawRgb = it_zed.advertiseCamera(rgb_raw_topic, 1); // rgb raw
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawRgb.getTopic());
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawRgb.getInfoTopic());
+        //mPubLeft = it_zed.advertiseCamera(left_topic, 1); // left
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubLeft.getTopic());
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubLeft.getInfoTopic());
+        //mPubRawLeft = it_zed.advertiseCamera(left_raw_topic, 1); // left raw
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawLeft.getTopic());
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawLeft.getInfoTopic());
         mPubRight = it_zed.advertiseCamera(right_topic, 1); // right
         NODELET_INFO_STREAM("Advertised on topic " << mPubRight.getTopic());
         NODELET_INFO_STREAM("Advertised on topic " << mPubRight.getInfoTopic());
-        mPubRawRight = it_zed.advertiseCamera(right_raw_topic, 1); // right raw
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawRight.getTopic());
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawRight.getInfoTopic());
+        //mPubRawRight = it_zed.advertiseCamera(right_raw_topic, 1); // right raw
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawRight.getTopic());
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawRight.getInfoTopic());
         mPubDepth = it_zed.advertiseCamera(depth_topic, 1); // depth
         NODELET_INFO_STREAM("Advertised on topic " << mPubDepth.getTopic());
         NODELET_INFO_STREAM("Advertised on topic " << mPubDepth.getInfoTopic());
-        mPubConfImg = it_zed.advertiseCamera(conf_img_topic, 1); // confidence image
-        NODELET_INFO_STREAM("Advertised on topic " << mPubConfImg.getTopic());
-        NODELET_INFO_STREAM("Advertised on topic " << mPubConfImg.getInfoTopic());
+        //mPubConfImg = it_zed.advertiseCamera(conf_img_topic, 1); // confidence image
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubConfImg.getTopic());
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubConfImg.getInfoTopic());
 
-        mPubStereo = it_zed.advertise(stereo_topic, 1);
-        NODELET_INFO_STREAM("Advertised on topic " << mPubStereo.getTopic());
-        mPubRawStereo = it_zed.advertise(stereo_raw_topic, 1);
-        NODELET_INFO_STREAM("Advertised on topic " << mPubRawStereo.getTopic());
+        //mPubStereo = it_zed.advertise(stereo_topic, 1);
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubStereo.getTopic());
+        //mPubRawStereo = it_zed.advertise(stereo_raw_topic, 1);
+        //NODELET_INFO_STREAM("Advertised on topic " << mPubRawStereo.getTopic());
 
         // Confidence Map publisher
         mPubConfMap = mNhNs.advertise<sensor_msgs::Image>(conf_map_topic, 1); // confidence map
