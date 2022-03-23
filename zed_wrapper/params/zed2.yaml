@@ -1,13 +1,13 @@
-# params/zedm_yaml
-# Parameters for Stereolabs ZED mini camera
+# params/zed2.yaml
+# Parameters for Stereolabs ZED2 camera
 ---
 
 general:
-    camera_model:               'zedm'
+    camera_model:               'zed2'
 
 depth:
-    min_depth:                  0.35            # Min: 0.1, Max: 3.0 - Default 0.3 - Note: reducing this value wil require more computational power and GPU memory
-    max_depth:                  10.0            # Max: 20.0
+    min_depth:                  0.3             # Min: 0.2, Max: 3.0 - Default 0.7 - Note: reducing this value wil require more computational power and GPU memory
+    max_depth:                  20.0            # Max: 40.0
 
 pos_tracking:
     imu_fusion:                 true            # enable/disable IMU fusion. When set to false, only the optical odometry will be used.
@@ -29,4 +29,4 @@ object_detection:
     mc_animal:                  true            # Enable/disable the detection of animals for 'MULTI_CLASS_BOX_X' models
     mc_electronics:             true            # Enable/disable the detection of electronic devices for 'MULTI_CLASS_BOX_X' models
     mc_fruit_vegetable:         true            # Enable/disable the detection of fruits and vegetables for 'MULTI_CLASS_BOX_X' models
-    mc_sport:                   true            # Enable/disable the detection of sport-related objects for 'MULTI_CLASS_BOX_X' models    
+    mc_sport:                   true            # Enable/disable the detection of sport-related objects for 'MULTI_CLASS_BOX_X' models
