@@ -1,6 +1,19 @@
 LATEST CHANGES
 ==============
 
+2022-04-26
+----------
+- Add Plane Detection. See [ZED Documentation](https://www.stereolabs.com/docs/ros/plane_detection/)
+
+2022-03-30
+----------
+- Fix wrong TF broadcasting when calling the `set_pose`, `reset_tracking`, and `reset_odometry` services. Now the initial odometry is coherent with the new starting point.
+
+2022-03-28
+----------
+- Add parameter `sensors/max_pub_rate` to set the maximum publishing frequency of sensors data
+- Improve Sensors thread
+
 2022-03-16
 -----------
 - Fix the frame links of barometer, magnetometer, and temperature sensors for ZED2i
